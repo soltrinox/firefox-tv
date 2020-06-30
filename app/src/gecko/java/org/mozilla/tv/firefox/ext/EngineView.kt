@@ -103,6 +103,12 @@ fun EngineView.playTargetVideo() {
     evalJSWithTargetVideo { videoId -> "$videoId.play();" }
 }
 
+/**
+ *    TODO:  JD JUST AS THIS CODE BELOW WE CAN INJECT INTO A PAGE OUR JAVA SCRIPT
+ *    IN EFFECT THIS WILL BYPASS THE REQUIREMENT TO HAVE A PLUGIN ALLTOGETHER
+ *    LETS SEE IF WE CAN DO THIS FOR A REMOTE FILE THAT THEM ADDS OUR CODE TOT HE DOM
+ */
+
 fun EngineView.pauseTargetVideo(isInterruptedByVoiceCommand: Boolean) {
     fun getJS(videoId: String) = if (!isInterruptedByVoiceCommand) {
         "$videoId.pause();"
