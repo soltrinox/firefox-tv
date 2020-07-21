@@ -15,6 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="27dp"
+        android:visibility="gone"
         android:background="@color/browser_overlay_background"
         app:layout_behavior="org.mozilla.tv.firefox.navigationoverlay.NavigationOverlayBehavior"
         android:orientation="vertical">
@@ -85,6 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:visibility="gone"
                 android:paddingTop="32dp"
                 android:background="@color/browser_overlay_background">
             </LinearLayout>

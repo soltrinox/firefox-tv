@@ -10,34 +10,40 @@
     <ImageButton
         android:id="@+id/navButtonBack"
         style="@style/NavigationButton"
+        android:visibility="invisible"
         android:src="@drawable/mozac_ic_back"
         android:contentDescription="@string/content_description_back"/>
 
     <ImageButton
         android:id="@+id/navButtonForward"
         style="@style/NavigationButton"
+        android:visibility="invisible"
         android:src="@drawable/mozac_ic_forward"
         android:contentDescription="@string/content_description_forward"/>
 
     <ImageButton
         android:id="@+id/navButtonReload"
         style="@style/NavigationButton"
+        android:visibility="invisible"
         android:src="@drawable/mozac_ic_refresh"
         android:contentDescription="@string/content_description_reload"/>
 
     <org.mozilla.tv.firefox.widget.CheckableImageButton
         android:id="@+id/pinButton"
         style="@style/NavigationButton"
+        android:visibility="invisible"
         android:src="@drawable/pin_selector"
         android:contentDescription="@string/pin_label"/>
 
     <!-- src and content description set programmatically -->
     <org.mozilla.tv.firefox.widget.CheckableImageButton
         android:id="@+id/turboButton"
+        android:visibility="invisible"
         style="@style/NavigationButton" />
 
     <org.mozilla.tv.firefox.widget.CheckableImageButton
         android:id="@+id/desktopModeButton"
+        android:visibility="invisible"
         style="@style/NavigationButton"
         android:src="@drawable/mozac_ic_device_desktop"
         android:contentDescription="@string/request_desktop_site_a11y"/>
@@ -45,6 +51,7 @@
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="invisible"
         android:layout_weight="1" />
 
     <!-- This button is set visible if the user is in the experiment. -->
@@ -63,6 +70,7 @@
         tools:ignore="ContentDescription"
         android:id="@+id/exitButton"
         style="@style/NavigationButton"
+        android:visibility="invisible"
         android:src="@drawable/ic_home"
         android:nextFocusRight="@id/exitButton"/>
 
