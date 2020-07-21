@@ -68,6 +68,11 @@ fun EngineView.observePlaybackState() {
 
 fun EngineView.observeScrollPosition() {
     // No action necessary.
+    evalJS("""
+            |(function() {
+            |   console.log('@@@@@@@@ hello world');
+            |})();
+            """.trimMargin())
 }
 
 fun EngineView.updateFullscreenScrollPosition() {
